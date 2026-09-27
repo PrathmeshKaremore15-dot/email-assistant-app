@@ -4,6 +4,19 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Archives & Compressed Files (Crucial for preventing key leaks) ###
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+### Secrets & Local Envs ###
+.env
+.env.local
+*.env
+application-local.properties
+
 ### STS ###
 .apt_generated
 .classpath
@@ -31,3 +44,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### OS Generated Files ###
+.DS_Store
+Thumbs.db
